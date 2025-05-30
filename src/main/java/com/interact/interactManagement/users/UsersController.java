@@ -10,10 +10,11 @@ import java.util.List;
 public class UsersController {
     @Autowired
     UserService service;
-@GetMapping("/login")
-public List<UserPojo> getBinTransferLogs() {
-    return service.getAllUsers();
-}
+
+    @GetMapping("/dev/api/users")
+    public List<UserPojo> getBinTransferLogs() {
+        return service.getAllUsers();
+    }
 
 
 }
