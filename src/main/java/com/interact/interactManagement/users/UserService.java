@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface UserService  {
     List<UserPojo> getAllUsers();
+
+    UserPojo loginUser(String userName, String password);
 }

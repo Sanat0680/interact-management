@@ -1,19 +1,24 @@
 package com.interact.interactManagement.users;
 
+import java.time.LocalDateTime;
+
 public class UserPojo {
     private Integer id;
+    private String username;
+    private String password;
+    private String email;
+    private String phoneNumber;
     private String userType;
-    private String userTypeDesc;
-    private String userRole;
-    private String userRoleDesc;
-    private Integer channelCategory;
+    private String address;
+    private LocalDateTime createdDate;
+    private LocalDateTime lastLoginDate;
 
-    public String getUserTypeDesc() {
-        return userTypeDesc;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setUserTypeDesc(String userTypeDesc) {
-        this.userTypeDesc = userTypeDesc;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public Integer getId() {
@@ -24,6 +29,33 @@ public class UserPojo {
         this.id = id;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+
+
     public String getUserType() {
         return userType;
     }
@@ -32,39 +64,42 @@ public class UserPojo {
         this.userType = userType;
     }
 
-    public String getUserRole() {
-        return userRole;
+    public String getAddress() {
+        return address;
     }
 
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getUserRoleDesc() {
-        return userRoleDesc;
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
     }
 
-    public void setUserRoleDesc(String userRoleDesc) {
-        this.userRoleDesc = userRoleDesc;
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Integer getChannelCategory() {
-        return channelCategory;
+    public LocalDateTime getLastLoginDate() {
+        return lastLoginDate;
     }
 
-    public void setChannelCategory(Integer channelCategory) {
-        this.channelCategory = channelCategory;
+    public void setLastLoginDate(LocalDateTime lastLoginDate) {
+        this.lastLoginDate = lastLoginDate;
     }
 
     @Override
     public String toString() {
-        return "userPojo{" +
+        return "UserPojo{" +
                 "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber=" + phoneNumber +
                 ", userType='" + userType + '\'' +
-                ", userTypeDesc='" + userTypeDesc + '\'' +
-                ", userRole='" + userRole + '\'' +
-                ", userRoleDesc='" + userRoleDesc + '\'' +
-                ", channelCategory=" + channelCategory +
+                ", address='" + address + '\'' +
+                ", createdDate=" + createdDate +
+                ", lastLoginDate=" + lastLoginDate +
                 '}';
     }
 }
