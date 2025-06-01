@@ -1,6 +1,6 @@
 package com.interact.interactManagement.payment;
 
-public class OrderPojo {
+public class PaymentPojo {
     private String Id;
     private long amount;
     private String currency;

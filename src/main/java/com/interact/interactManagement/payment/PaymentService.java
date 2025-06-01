@@ -6,5 +6,5 @@ import org.springframework.http.ResponseEntity;
 import java.util.Map;
 
 public interface PaymentService {
-    ResponseEntity<Map<String, Object>> CreateOrder(OrderPojo request) throws RazorpayException;
+    ResponseEntity<Map<String, Object>> CreateOrder(PaymentPojo request) throws RazorpayException;
 }

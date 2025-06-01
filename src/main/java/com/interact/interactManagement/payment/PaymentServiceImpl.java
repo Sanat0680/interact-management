@@ -24,7 +24,7 @@ public class PaymentServiceImpl implements PaymentService {
     @Value("${razorpay.api.secret}")
     private String razorpaySecret;
 
-    public ResponseEntity<Map<String, Object>> CreateOrder(OrderPojo order) throws RazorpayException {
+    public ResponseEntity<Map<String, Object>> CreateOrder(PaymentPojo order) throws RazorpayException {
 
         try {
             RazorpayClient razorpay = new RazorpayClient(razorpayKey, razorpaySecret);

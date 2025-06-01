@@ -14,7 +14,7 @@ public class paymentController {
     private PaymentService stripeService;
 
     @PostMapping("/api/payments")
-    public ResponseEntity<Map<String, Object>> createPaymentIntent(@RequestBody OrderPojo request) {
+    public ResponseEntity<Map<String, Object>> createPaymentIntent(@RequestBody PaymentPojo request) {
         try {
             ResponseEntity<Map<String, Object>> response = stripeService.CreateOrder(request);
             return ResponseEntity.ok(response.getBody());
